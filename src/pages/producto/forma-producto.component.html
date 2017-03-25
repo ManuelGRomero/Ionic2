@@ -1,0 +1,18 @@
+<h1>
+  Forma Producto
+</h1>
+
+<form action="/action_page.php">
+    <div>
+		
+		<input type="text" name="nombre" id="nombre" placeholder="Nombre" required
+		[(ngModel)]="nuevoProducto.nombre"
+		>
+		<input type="text" name="precio" id="precio" placeholder="Precio" required
+		[(ngModel)]="nuevoProducto.precio"
+		>
+		<button class="button button-primary" (click)='guardarProducto()'>Guardar</button>
+		<!--<span>{{imprimirNuevoProducto}}</span>-->
+
+	</div>
+</form>
